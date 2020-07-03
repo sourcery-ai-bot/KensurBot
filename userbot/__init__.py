@@ -66,6 +66,7 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
+PM_AUTO_RESPOND = os.environ.get("PM_AUTO_RESPOND", "")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)

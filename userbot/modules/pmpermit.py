@@ -11,14 +11,12 @@ from telethon.tl.types import User
 from sqlalchemy.exc import IntegrityError
 
 from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID, PM_AUTO_BAN,
-                     LASTMSG, LOGS)
+                     LASTMSG, LOGS, PM_AUTO_RESPOND)
 
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = (
-    "`Hey there! Unfortunately, I don't accept private messages from strangers.\n`"
-    "`Please contact me in a group, or wait for me to approve you.`")  # thanks hackintosh5
+UNAPPROVED_MSG = str(PM_AUTO_RESPOND)
 # =================================================================
 
 
